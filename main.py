@@ -107,7 +107,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Seeing what proportion of variance of stars could be explained by the features.
-print(model.score(X_train, y_train))
-print(model.score(X_test, y_test))
+print(model.score(X_train, y_train))  # Stars variance due to average_review_length
+print(model.score(X_test, y_test))  # Stars variance due to average_review_age
 
 # About 8% for each feature.
